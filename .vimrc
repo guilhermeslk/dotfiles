@@ -69,7 +69,7 @@ if has("gui_running")
 
   set guifont=Consolas:h14         " Configura fonte
 
-  au GUIEnter * simalt ~x         " Maximiza a janela (Gvim Windows)
+  au GUIEnter * simalt ~x          " Maximiza a janela (Gvim Windows)
 endif
 
 " =============== Atalhos ===============
