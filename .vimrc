@@ -15,6 +15,17 @@ set noswapfile
 set encoding=utf-8              " Enconding UTF-8
 set fileencodings=utf-8
 
+set incsearch 					" Pesquisa Incremental
+set nowrap						" Desabilita Wrap
+
+" =============== Navegação ===============
+nnoremap <C-S-tab> :tabprevious<CR>
+nnoremap <C-tab>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+inoremap <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
+
 " =============== Identação ===============
 
 filetype indent on              " Habilita identação por tipo de arquivo
@@ -33,10 +44,10 @@ set showmatch                   " Exibe o fechamento dos blocos de código
 set t_Co=256                    " Habilita Termina de 256 cores 
 syntax on                       " Habilita o Syntax Highlighting
 
-let g:seoul256_background = 234 " Configura contraste do bg do tema
-colo seoul256                   " Configura o tema
+set background=dark             " Background escuro
+colorscheme Tomorrow-Night      " Configura tema Tomorrow-Night
 
-set wildmenu                    " Habilita o Wild Menu
+set wildmenu                    " Habilita o Wild Menu (autocomplete)
 set ruler                       " Habilita a régua
 set laststatus=2                " Habilita a statusline
 set so=7
@@ -52,12 +63,13 @@ if has("gui_running")
   set mouse=a  " Habilita o mouse
 
   set guioptions-=T                " Remove toolbar
-  set guioptions-=r                " Remove right-hand scroll bar
-  set guioptions-=L                " Remove left-hand scroll bar
+  set guioptions-=r                " Remove scroll bar direita
+  set guioptions-=L                " Remove scroll bar esquerda
+  set guioptions-=m                " Remove menu
 
   set guifont=Consolas:h14         " Configura fonte
 
-"  au GUIEnter * simalt ~x         " Maxime gvim window
+  au GUIEnter * simalt ~x         " Maximiza a janela (Gvim Windows)
 endif
 
 " =============== Atalhos ===============
@@ -67,3 +79,4 @@ map <silent> <C-k> :NERDTreeToggle<CR>  " NERDTree
 
 " =============== Plugins ===============
 let g:airline_theme='luna'        " Airline Plugin Theme
+let g:NERDTreeDirArrows=1
