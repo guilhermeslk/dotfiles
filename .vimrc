@@ -87,7 +87,7 @@ if has("gui_running")
   set guioptions-=L                " Remove scroll bar esquerda
   set guioptions-=m                " Remove menu
 
-  set guifont=Consolas:h14         " Configura fonte
+  set guifont=Monaco\ 11           " Configura fonte
 
 endif
 
