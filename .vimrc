@@ -97,5 +97,5 @@ nmap <c-s> :w<cr>                       " Comando Salvar (:w)
 map <silent> <C-k> :NERDTreeToggle<CR>  " NERDTree
 
 " =============== Plugins ===============
-let g:airline_theme='luna'        " Airline Plugin Theme
+let g:airline_theme='tomorrow'        " Airline Plugin Theme
 let g:NERDTreeDirArrows=1
