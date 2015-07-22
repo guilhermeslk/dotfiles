@@ -88,6 +88,9 @@ if has("gui_running")
   set guioptions-=m                " Remove menu
 
   set guifont=Monaco\ 11           " Configura fonte
+  
+  set background=dark             " Background escuro
+  colorscheme base16-eighties     " Configura tema base16-tomorrow
 
 endif
 
