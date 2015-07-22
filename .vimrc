@@ -1,3 +1,22 @@
+set nocompatible
+
+" =============== Configuração Vundle ================
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'bling/vim-airline'
+Plugin 'Townk/vim-autoclose'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end()
+
 " =============== Configurações Gerais ===============
 set nocompatible  
 set history=700                 " Configura quantas linhas de histórico o VIM irá lembrar
