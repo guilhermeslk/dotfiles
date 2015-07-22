@@ -37,6 +37,7 @@ set fileencodings=utf-8
 set incsearch 					" Pesquisa Incremental
 set nowrap						" Desabilita Wrap
 
+set linespace=10
 " =============== Navegação ===============
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
