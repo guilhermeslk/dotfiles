@@ -80,17 +80,26 @@ set tm=500
 
 " =============== Configurações MacVim / Gvim ===============
 if has("gui_running")  
-  set mouse=a  " Habilita o mouse
+    set mouse=a  " Habilita o mouse
 
-  set guioptions-=T                " Remove toolbar
-  set guioptions-=r                " Remove scroll bar direita
-  set guioptions-=L                " Remove scroll bar esquerda
-  set guioptions-=m                " Remove menu
+    set guioptions-=T                " Remove toolbar
+    set guioptions-=r                " Remove scroll bar direita
+    set guioptions-=L                " Remove scroll bar esquerda
+    set guioptions-=m                " Remove menu
 
-  set guifont=Monaco\ 11           " Configura fonte
-  
-  set background=dark             " Background escuro
-  colorscheme base16-eighties     " Configura tema base16-tomorrow
+    " Configura a fonte (OS X / Ubuntu / Windows)
+    if has("gui_running")
+        if has("gui_gtk2")
+            set guifont=Monaco\ 11
+        elseif has("gui_macvim")
+            set guifont=Menlo\ Regular:h16
+        elseif has("gui_win32")
+            set guifont=Consolas:h11:cANSI
+        endif
+    endif
+
+    set background=dark             " Background escuro
+    colorscheme base16-tomorrow     " Configura tema base16-tomorrow
 
 endif
 
