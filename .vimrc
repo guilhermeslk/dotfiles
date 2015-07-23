@@ -15,6 +15,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 
