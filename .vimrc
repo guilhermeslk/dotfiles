@@ -39,7 +39,8 @@ set fileencodings=utf-8
 set incsearch 					" Pesquisa Incremental
 set nowrap						" Desabilita Wrap
 
-set linespace=10
+set linespace=10                " Configura o espaçamento entre linhas
+set clipboard=unnamed           " Habilita o clipboard do sistema
 " =============== Navegação ===============
 nnoremap <C-S-tab> :tabprevious<CR>
 nnoremap <C-tab>   :tabnext<CR>
