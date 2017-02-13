@@ -17,11 +17,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'chriskempson/base16-vim'
 Plugin 'xsbeats/vim-blade'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 
 " =============== Configurações Gerais ===============
-set nocompatible  
+set nocompatible
 set history=700                 " Configura quantas linhas de histórico o VIM irá lembrar
 
 filetype plugin on              " Habilita Plugins por tipo de arquivo
@@ -65,7 +67,7 @@ set smartindent                 " Smartindent
 set showmatch                   " Exibe o fechamento dos blocos de código
 
 " =============== Tela ===============
-set t_Co=256                    " Habilita Termina de 256 cores 
+set t_Co=256                    " Habilita Termina de 256 cores
 syntax on                       " Habilita o Syntax Highlighting
 
 set background=dark             " Background escuro
@@ -83,7 +85,7 @@ set t_vb=
 set tm=500
 
 " =============== Configurações MacVim / Gvim ===============
-if has("gui_running")  
+if has("gui_running")
     set mouse=a  " Habilita o mouse
 
     set guioptions-=T                " Remove toolbar
