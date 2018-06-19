@@ -9,7 +9,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
+Plugin 'elixir-editors/vim-elixir'
 Plugin 'Townk/vim-autoclose'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
