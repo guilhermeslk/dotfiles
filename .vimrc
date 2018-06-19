@@ -7,8 +7,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'bling/vim-airline'
 Plugin 'Townk/vim-autoclose'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
@@ -70,8 +71,8 @@ set showmatch                   " Exibe o fechamento dos blocos de código
 set t_Co=256                    " Habilita Termina de 256 cores
 syntax on                       " Habilita o Syntax Highlighting
 
-set background=dark             " Background escuro
-colorscheme Tomorrow-Night      " Configura tema Tomorrow-Night
+set background=light             " Background escuro
+colorscheme solarized      " Configura tema Tomorrow-Night
 
 set wildmenu                    " Habilita o Wild Menu (autocomplete)
 set ruler                       " Habilita a régua
@@ -96,7 +97,7 @@ if has("gui_running")
     " Configura a fonte (OS X / Ubuntu / Windows)
     if has("gui_running")
         if has("gui_gtk2")
-            set guifont=Monaco\ 11
+            set guifont=Ubuntu Mono\ 11
         elseif has("gui_macvim")
             set guifont=Menlo\ Regular:h16
         elseif has("gui_win32")
@@ -104,8 +105,8 @@ if has("gui_running")
         endif
     endif
 
-    set background=dark             " Background escuro
-    colorscheme base16-tomorrow     " Configura tema base16-tomorrow
+    set background=light             " Background escuro
+    colorscheme solarized     " Configura tema base16-tomorrow
 
 endif
 
@@ -115,5 +116,6 @@ nmap <c-s> :w<cr>                       " Comando Salvar (:w)
 map <silent> <C-k> :NERDTreeToggle<CR>  " NERDTree
 
 " =============== Plugins ===============
-let g:airline_theme='tomorrow'        " Airline Plugin Theme
+let g:airline_theme='solarized'        " Airline Plugin Theme
+let g:airline_solarized_bg='light'
 let g:NERDTreeDirArrows=1
